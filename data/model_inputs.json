@@ -1,0 +1,1960 @@
+{
+  "company": "PT Darma Henwa Tbk",
+  "ticker": "IDX:DEWA",
+  "prepared": "2026-10-21",
+  "valuation_date": "2026-10-19",
+  "financial_date": "2026-09-30",
+  "unit": "IDR billion except share counts and IDR/share",
+  "historical": {
+    "FY2024R": {
+      "revenue": 6031.956702,
+      "cogs": 5592.491287,
+      "gross_profit": 439.465415,
+      "sga": 233.537259,
+      "finance_income": 4.541142,
+      "finance_cost": 85.149412,
+      "fx": -3.145583,
+      "associates": 0.455466,
+      "final_tax": 21.37107,
+      "other": -6.179188,
+      "pbt": 95.079511,
+      "tax_expense": 39.834786,
+      "net_income": 55.244725,
+      "da_ppe": 555.013289,
+      "da_rou": 135.219079,
+      "assets": 8534.262123,
+      "cash": 346.530081,
+      "liabilities": 5495.545182,
+      "equity": 3038.716941,
+      "parent_equity": 3035.77347,
+      "nci": 2.943471
+    },
+    "FY2025": {
+      "revenue": 6392.755815,
+      "cogs": 5430.580843,
+      "gross_profit": 962.174972,
+      "sga": 235.78131,
+      "finance_income": 15.887456,
+      "finance_cost": 258.691977,
+      "fx": -2.647003,
+      "associates": 0.112332,
+      "final_tax": 4.122694,
+      "other": 3736.812968,
+      "pbt": 4213.744744,
+      "tax_expense": -93.016518,
+      "net_income": 4306.761262,
+      "acquisition_gain": 4535.394669,
+      "receivable_writeoff": 56.481274,
+      "loss_of_control": 82.41174,
+      "inventory_writeoff": 83.445287,
+      "asset_disposal_loss": 501.443133,
+      "other_residual": -74.800267,
+      "da_ppe": 861.961837,
+      "da_rou": 78.711678,
+      "assets": 16734.972389,
+      "cash": 1590.630399,
+      "receivables": 1537.197167,
+      "inventory": 302.447875,
+      "prepaid": 7.186593,
+      "other_current": 156.186176,
+      "exploration": 7008.62148,
+      "investments": 1106.339607,
+      "associate_asset": 51.192201,
+      "liabilities": 8143.839115,
+      "trade_payables": 889.774263,
+      "accruals": 400.168695,
+      "unearned": 237.891465,
+      "bank_current": 835.492258,
+      "bank_long": 2635.60833,
+      "finance_lease_current": 9.180881,
+      "finance_lease_long": 1.171938,
+      "lease_current": 37.193491,
+      "lease_long": 40.73117,
+      "other_debt_current": 722.289107,
+      "other_debt_long": 756.523722,
+      "related_debt": 19.093285,
+      "equity": 8591.133274,
+      "parent_equity": 8575.865655,
+      "nci": 15.267619,
+      "treasury_cost": 160.288054,
+      "cfo": 1456.111678,
+      "capex": 1588.907875,
+      "cfi": -1686.223847,
+      "cff": 1474.212487,
+      "opening_cash": 346.530081,
+      "exploration_dtl": 1305.75689
+    },
+    "Q1YTD2026": {
+      "revenue": 1549.301627,
+      "cogs": 1280.540289,
+      "gross_profit": 268.761338,
+      "sga": 75.935191,
+      "finance_income": 2.497218,
+      "finance_cost": 70.173427,
+      "fx": 1.629892,
+      "associates": 0.0,
+      "final_tax": 0.105457,
+      "other": -10.000428,
+      "pbt": 116.673945,
+      "tax_expense": 23.957204,
+      "net_income": 92.716741,
+      "assets": 15952.540404,
+      "liabilities": 8060.112649,
+      "equity": 7892.427755,
+      "parent_equity": 7877.160533,
+      "nci": 15.267222,
+      "cash": 486.824326,
+      "da_ppe": 239.217769,
+      "da_rou": 10.188636,
+      "cfo": 138.414164,
+      "cfi": -251.023442,
+      "cff": -991.196795
+    },
+    "Q2YTD2026": {
+      "revenue": 3206.116454,
+      "cogs": 2593.956166,
+      "gross_profit": 612.160288,
+      "sga": 202.503602,
+      "finance_income": 3.92069,
+      "finance_cost": 207.155959,
+      "fx": 4.135855,
+      "associates": -0.108269,
+      "final_tax": 2.022429,
+      "other": 255.669766,
+      "pbt": 464.09634,
+      "tax_expense": 109.864199,
+      "net_income": 354.232141,
+      "assets": 17626.726284,
+      "liabilities": 9515.555808,
+      "equity": 8111.170476,
+      "parent_equity": 8095.955109,
+      "nci": 15.215367,
+      "cash": 644.250375,
+      "da_ppe": 513.356914,
+      "da_rou": 13.323571,
+      "cfo": 658.640617,
+      "cfi": -1471.353989,
+      "cff": -133.666652
+    },
+    "Q3YTD2026": {
+      "revenue": 5102.014681,
+      "cogs": 4067.226463,
+      "gross_profit": 1034.788218,
+      "sga": 322.352375,
+      "finance_income": 5.565778,
+      "finance_cost": 319.431476,
+      "fx": 3.538426,
+      "associates": -0.108269,
+      "final_tax": 2.299684,
+      "other": 260.203417,
+      "pbt": 659.904035,
+      "tax_expense": 146.844161,
+      "net_income": 513.059874,
+      "assets": 18136.812791,
+      "liabilities": 9866.814582,
+      "equity": 8269.998209,
+      "parent_equity": 8254.756381,
+      "nci": 15.241828,
+      "treasury_cost": 951.710314,
+      "cash": 744.92702,
+      "receivables_related": 1818.315452,
+      "receivables_third": 68.471491,
+      "liquid_investments": 23.43058,
+      "inventory": 330.941879,
+      "prepaid": 27.032642,
+      "other_current": 407.607478,
+      "investments": 1335.712061,
+      "associate_asset": 51.083932,
+      "exploration": 7040.564185,
+      "trade_payables": 1172.371579,
+      "accruals": 412.254503,
+      "customer_advances": 3.75,
+      "unearned": 232.065835,
+      "bank_current": 2268.892487,
+      "finance_lease_current": 2.527903,
+      "other_borrowings_current": 894.537498,
+      "bank_long": 2305.994486,
+      "related_debt": 3.270372,
+      "finance_lease_long": 0.429566,
+      "other_borrowings_long": 800.979089,
+      "da_ppe": 826.160554,
+      "da_rou": 19.082226,
+      "cfo": 1664.807517,
+      "capex": 1341.623003,
+      "cfi": -2158.160222,
+      "cff": -352.350674
+    },
+    "Q3YTD2025": {
+      "revenue": 4650.366326,
+      "cogs": 3977.214157,
+      "gross_profit": 673.152169,
+      "sga": 181.709238,
+      "finance_income": 5.539977,
+      "finance_cost": 177.979268,
+      "fx": -2.961729,
+      "associates": 0.072538,
+      "final_tax": 2.955124,
+      "other": 19.864226,
+      "pbt": 333.023551,
+      "tax_expense": 93.85479,
+      "net_income": 239.168761,
+      "cfo": 1299.097101,
+      "capex": 1338.194376
+    },
+    "FY2024Original": {
+      "assets": 8806.355222,
+      "equity": 3310.81004,
+      "cogs": 5631.380112,
+      "net_income": 16.3559
+    }
+  },
+  "records": [
+    {
+      "period": "FY2024R",
+      "metric": "revenue",
+      "value": 6031956702,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "cogs",
+      "value": 5592491287,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "gross_profit",
+      "value": 439465415,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "sga",
+      "value": 233537259,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "finance_income",
+      "value": 4541142,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "finance_cost",
+      "value": 85149412,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "fx",
+      "value": -3145583,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "associates",
+      "value": 455466,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "final_tax",
+      "value": 21371070,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "other",
+      "value": -6179188,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "pbt",
+      "value": 95079511,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "tax_expense",
+      "value": 39834786,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2024R",
+      "metric": "net_income",
+      "value": 55244725,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "revenue",
+      "value": 6392755815,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "cogs",
+      "value": 5430580843,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "gross_profit",
+      "value": 962174972,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "sga",
+      "value": 235781310,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "finance_income",
+      "value": 15887456,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "finance_cost",
+      "value": 258691977,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "fx",
+      "value": -2647003,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "associates",
+      "value": 112332,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "final_tax",
+      "value": 4122694,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "other",
+      "value": 3736812968,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "pbt",
+      "value": 4213744744,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "tax_expense",
+      "value": -93016518,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "net_income",
+      "value": 4306761262,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "FY2025",
+      "metric": "acquisition_gain",
+      "value": 4535394669,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 120
+    },
+    {
+      "period": "FY2025",
+      "metric": "receivable_writeoff",
+      "value": 56481274,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 120
+    },
+    {
+      "period": "FY2025",
+      "metric": "loss_of_control",
+      "value": 82411740,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 120
+    },
+    {
+      "period": "FY2025",
+      "metric": "inventory_writeoff",
+      "value": 83445287,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 120
+    },
+    {
+      "period": "FY2025",
+      "metric": "asset_disposal_loss",
+      "value": 501443133,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 120
+    },
+    {
+      "period": "FY2025",
+      "metric": "other_residual",
+      "value": -74800267,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 120
+    },
+    {
+      "period": "FY2025",
+      "metric": "da_ppe",
+      "value": 861961837,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 90
+    },
+    {
+      "period": "FY2025",
+      "metric": "da_rou",
+      "value": 78711678,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 92
+    },
+    {
+      "period": "FY2024R",
+      "metric": "da_ppe",
+      "value": 555013289,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 90
+    },
+    {
+      "period": "FY2024R",
+      "metric": "da_rou",
+      "value": 135219079,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 119
+    },
+    {
+      "period": "FY2025",
+      "metric": "assets",
+      "value": 16734972389,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "cash",
+      "value": 1590630399,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "receivables",
+      "value": 1537197167,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "inventory",
+      "value": 302447875,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "prepaid",
+      "value": 7186593,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "other_current",
+      "value": 156186176,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "exploration",
+      "value": 7008621480,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "investments",
+      "value": 1106339607,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "associate_asset",
+      "value": 51192201,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "liabilities",
+      "value": 8143839115,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "trade_payables",
+      "value": 889774263,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "accruals",
+      "value": 400168695,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "unearned",
+      "value": 237891465,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "bank_current",
+      "value": 835492258,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "bank_long",
+      "value": 2635608330,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "finance_lease_current",
+      "value": 9180881,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "finance_lease_long",
+      "value": 1171938,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "lease_current",
+      "value": 37193491,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "lease_long",
+      "value": 40731170,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "other_debt_current",
+      "value": 722289107,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "other_debt_long",
+      "value": 756523722,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "related_debt",
+      "value": 19093285,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "FY2025",
+      "metric": "equity",
+      "value": 8591133274,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 28
+    },
+    {
+      "period": "FY2025",
+      "metric": "parent_equity",
+      "value": 8575865655,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 28
+    },
+    {
+      "period": "FY2025",
+      "metric": "nci",
+      "value": 15267619,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 28
+    },
+    {
+      "period": "FY2025",
+      "metric": "treasury_cost",
+      "value": 160288054,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 28
+    },
+    {
+      "period": "FY2025",
+      "metric": "cfo",
+      "value": 1456111678,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 32
+    },
+    {
+      "period": "FY2025",
+      "metric": "capex",
+      "value": 1588907875,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 32
+    },
+    {
+      "period": "FY2025",
+      "metric": "cfi",
+      "value": -1686223847,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 32
+    },
+    {
+      "period": "FY2025",
+      "metric": "cff",
+      "value": 1474212487,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 33
+    },
+    {
+      "period": "FY2025",
+      "metric": "opening_cash",
+      "value": 346530081,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 33
+    },
+    {
+      "period": "FY2024R",
+      "metric": "assets",
+      "value": 8534262123,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2024R",
+      "metric": "cash",
+      "value": 346530081,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2024R",
+      "metric": "liabilities",
+      "value": 5495545182,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 28
+    },
+    {
+      "period": "FY2024R",
+      "metric": "equity",
+      "value": 3038716941,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 28
+    },
+    {
+      "period": "FY2024R",
+      "metric": "parent_equity",
+      "value": 3035773470,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 28
+    },
+    {
+      "period": "FY2024R",
+      "metric": "nci",
+      "value": 2943471,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 28
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "revenue",
+      "value": 1549301627,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "cogs",
+      "value": 1280540289,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "gross_profit",
+      "value": 268761338,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "sga",
+      "value": 75935191,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "finance_income",
+      "value": 2497218,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "finance_cost",
+      "value": 70173427,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "fx",
+      "value": 1629892,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "associates",
+      "value": 0,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "final_tax",
+      "value": 105457,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "other",
+      "value": -10000428,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "pbt",
+      "value": 116673945,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "tax_expense",
+      "value": 23957204,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "net_income",
+      "value": 92716741,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "revenue",
+      "value": 3206116454,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "cogs",
+      "value": 2593956166,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "gross_profit",
+      "value": 612160288,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "sga",
+      "value": 202503602,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "finance_income",
+      "value": 3920690,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "finance_cost",
+      "value": 207155959,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "fx",
+      "value": 4135855,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "associates",
+      "value": -108269,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "final_tax",
+      "value": 2022429,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "other",
+      "value": 255669766,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "pbt",
+      "value": 464096340,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "tax_expense",
+      "value": 109864199,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "net_income",
+      "value": 354232141,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 20
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "revenue",
+      "value": 5102014681,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "cogs",
+      "value": 4067226463,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "gross_profit",
+      "value": 1034788218,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "sga",
+      "value": 322352375,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "finance_income",
+      "value": 5565778,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "finance_cost",
+      "value": 319431476,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "fx",
+      "value": 3538426,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "associates",
+      "value": -108269,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "final_tax",
+      "value": 2299684,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "other",
+      "value": 260203417,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "pbt",
+      "value": 659904035,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "tax_expense",
+      "value": 146844161,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "net_income",
+      "value": 513059874,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "revenue",
+      "value": 4650366326,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "cogs",
+      "value": 3977214157,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "gross_profit",
+      "value": 673152169,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "sga",
+      "value": 181709238,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "finance_income",
+      "value": 5539977,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "finance_cost",
+      "value": 177979268,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "fx",
+      "value": -2961729,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "associates",
+      "value": 72538,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "final_tax",
+      "value": 2955124,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "other",
+      "value": 19864226,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "pbt",
+      "value": 333023551,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "tax_expense",
+      "value": 93854790,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "net_income",
+      "value": 239168761,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "assets",
+      "value": 15952540404,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 8
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "liabilities",
+      "value": 8060112649,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 16
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "equity",
+      "value": 7892427755,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 17
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "parent_equity",
+      "value": 7877160533,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 17
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "nci",
+      "value": 15267222,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 17
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "cash",
+      "value": 486824326,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 4
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "da_ppe",
+      "value": 239217769,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 44
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "da_rou",
+      "value": 10188636,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 48
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "cfo",
+      "value": 138414164,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 25
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "cfi",
+      "value": -251023442,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "Q1YTD2026",
+      "metric": "cff",
+      "value": -991196795,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-I-DEWA.pdf",
+      "pdf_page": 31
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "assets",
+      "value": 17626726284,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 10
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "liabilities",
+      "value": 9515555808,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 18
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "equity",
+      "value": 8111170476,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 19
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "parent_equity",
+      "value": 8095955109,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 19
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "nci",
+      "value": 15215367,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 19
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "cash",
+      "value": 644250375,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 6
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "da_ppe",
+      "value": 513356914,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 47
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "da_rou",
+      "value": 13323571,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 52
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "cfo",
+      "value": 658640617,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 27
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "cfi",
+      "value": -1471353989,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 31
+    },
+    {
+      "period": "Q2YTD2026",
+      "metric": "cff",
+      "value": -133666652,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-II-DEWA.pdf",
+      "pdf_page": 33
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "assets",
+      "value": 18136812791,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 8
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "liabilities",
+      "value": 9866814582,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 16
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "equity",
+      "value": 8269998209,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 17
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "parent_equity",
+      "value": 8254756381,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 17
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "nci",
+      "value": 15241828,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 17
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "treasury_cost",
+      "value": 951710314,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 16
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "cash",
+      "value": 744927020,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 4
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "receivables_related",
+      "value": 1818315452,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 4
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "receivables_third",
+      "value": 68471491,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 4
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "liquid_investments",
+      "value": 23430580,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 4
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "inventory",
+      "value": 330941879,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 5
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "prepaid",
+      "value": 27032642,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 5
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "other_current",
+      "value": 407607478,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 5
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "investments",
+      "value": 1335712061,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 6
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "associate_asset",
+      "value": 51083932,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 6
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "exploration",
+      "value": 7040564185,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 8
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "trade_payables",
+      "value": 1172371579,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 9
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "accruals",
+      "value": 412254503,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 9
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "customer_advances",
+      "value": 3750000,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 9
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "unearned",
+      "value": 232065835,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 9
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "bank_current",
+      "value": 2268892487,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 10
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "finance_lease_current",
+      "value": 2527903,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 12
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "other_borrowings_current",
+      "value": 894537498,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 12
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "bank_long",
+      "value": 2305994486,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 13
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "related_debt",
+      "value": 3270372,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 13
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "finance_lease_long",
+      "value": 429566,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 14
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "other_borrowings_long",
+      "value": 800979089,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 14
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "da_ppe",
+      "value": 826160554,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 45
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "da_rou",
+      "value": 19082226,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 50
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "cfo",
+      "value": 1664807517,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 25
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "capex",
+      "value": 1341623003,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "cfi",
+      "value": -2158160222,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 29
+    },
+    {
+      "period": "Q3YTD2026",
+      "metric": "cff",
+      "value": -352350674,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 31
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "cfo",
+      "value": 1299097101,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 25
+    },
+    {
+      "period": "Q3YTD2025",
+      "metric": "capex",
+      "value": 1338194376,
+      "unit": "IDR thousand",
+      "file": "FinancialStatement-2026-III-DEWA.pdf",
+      "pdf_page": 26
+    },
+    {
+      "period": "FY2025",
+      "metric": "exploration_dtl",
+      "value": 1305756890,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 81
+    },
+    {
+      "period": "FY2024Original",
+      "metric": "assets",
+      "value": 8806355222,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 73
+    },
+    {
+      "period": "FY2024Original",
+      "metric": "equity",
+      "value": 3310810040,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 75
+    },
+    {
+      "period": "FY2024Original",
+      "metric": "cogs",
+      "value": 5631380112,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 79
+    },
+    {
+      "period": "FY2024Original",
+      "metric": "net_income",
+      "value": 16355900,
+      "unit": "IDR thousand",
+      "file": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "pdf_page": 79
+    }
+  ],
+  "peers": [
+    {
+      "ticker": "PTRO",
+      "name": "Petrosea",
+      "ev_ebitda": 12.74,
+      "ev_idr_bn": 45458.334,
+      "reference_price": 3110,
+      "include": true,
+      "reason": "Contract mining fit, but EPC and offshore mix and high multiple.",
+      "source": "https://stockanalysis.com/quote/idx/PTRO/financials/ratios/",
+      "profile_source": "https://petrosea.com/wp-content/uploads/2025/04/Press-Release-Results-of-PT-Petrosea-Tbk-General-Meeting-of-Shareholders.pdf",
+      "date": "2026-10-19",
+      "basis": "Vendor Current/TTM, rounded; financial endpoint and lease perimeter not independently reconciled"
+    },
+    {
+      "ticker": "MYOH",
+      "name": "Samindo Resources",
+      "ev_ebitda": 0.8,
+      "ev_idr_bn": 608.07,
+      "reference_price": 860,
+      "include": true,
+      "reason": "Integrated coal services fit. Net cash and low EV can distort the multiple.",
+      "source": "https://stockanalysis.com/quote/idx/MYOH/financials/ratios/",
+      "profile_source": "https://samindoresources.com/",
+      "date": "2026-10-19",
+      "basis": "Vendor Current/TTM, rounded; financial endpoint and lease perimeter not independently reconciled"
+    },
+    {
+      "ticker": "DOID",
+      "name": "BUMA Internasional Grup",
+      "ev_ebitda": 7.91,
+      "ev_idr_bn": 17027.859,
+      "reference_price": 162,
+      "include": true,
+      "reason": "Mining contractor fit. Australia exposure, leverage and losses reduce comparability.",
+      "source": "https://stockanalysis.com/quote/idx/DOID/financials/ratios/",
+      "profile_source": "https://bumainternational.com/our-business",
+      "date": "2026-10-19",
+      "basis": "Vendor Current/TTM, rounded; financial endpoint and lease perimeter not independently reconciled"
+    },
+    {
+      "ticker": "UNIQ",
+      "name": "Ulima Nitra",
+      "ev_ebitda": 2.76,
+      "ev_idr_bn": 454.612,
+      "reference_price": 102,
+      "include": true,
+      "reason": "Mining and equipment rental fit. Much smaller scale and liquidity.",
+      "source": "https://stockanalysis.com/quote/idx/UNIQ/financials/ratios/",
+      "profile_source": "https://www.ulimanitra.co.id/?halaman=ongp",
+      "date": "2026-10-19",
+      "basis": "Vendor Current/TTM, rounded; financial endpoint and lease perimeter not independently reconciled"
+    },
+    {
+      "ticker": "UNTR",
+      "name": "United Tractors",
+      "ev_ebitda": 3.73,
+      "ev_idr_bn": 97910.457,
+      "reference_price": 24375,
+      "include": false,
+      "reason": "Secondary benchmark only: equipment distribution, mining ownership and gold diversify earnings.",
+      "source": "https://stockanalysis.com/quote/idx/UNTR/financials/ratios/",
+      "profile_source": "https://www.unitedtractors.com/en/quarterly-report/",
+      "date": "2026-10-20",
+      "basis": "Vendor Current/TTM, rounded; financial endpoint and lease perimeter not independently reconciled"
+    }
+  ],
+  "scenarios": {
+    "Bear": {
+      "growth": [
+        0,
+        0.01,
+        0.02,
+        0.02,
+        0.02
+      ],
+      "margin": [
+        0.11,
+        0.11,
+        0.115,
+        0.12,
+        0.12
+      ],
+      "da": [
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ],
+      "capex": [
+        0.22,
+        0.21,
+        0.2,
+        0.19,
+        0.18
+      ],
+      "nwc": [
+        0.13,
+        0.13,
+        0.13,
+        0.13,
+        0.13
+      ],
+      "wacc": 0.16,
+      "g": 0.025,
+      "roic": 0.12,
+      "asset_recovery": 0.1,
+      "investment_recovery": 0.75,
+      "probability": 0.25
+    },
+    "Base": {
+      "growth": [
+        0.08,
+        0.07,
+        0.06,
+        0.05,
+        0.04
+      ],
+      "margin": [
+        0.14,
+        0.145,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "da": [
+        0.155,
+        0.15,
+        0.145,
+        0.14,
+        0.14
+      ],
+      "capex": [
+        0.21,
+        0.2,
+        0.19,
+        0.18,
+        0.17
+      ],
+      "nwc": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "wacc": 0.14,
+      "g": 0.035,
+      "roic": 0.15,
+      "asset_recovery": 0.3,
+      "investment_recovery": 0.9,
+      "probability": 0.5
+    },
+    "Bull": {
+      "growth": [
+        0.15,
+        0.12,
+        0.1,
+        0.08,
+        0.06
+      ],
+      "margin": [
+        0.16,
+        0.17,
+        0.18,
+        0.18,
+        0.18
+      ],
+      "da": [
+        0.15,
+        0.145,
+        0.14,
+        0.135,
+        0.13
+      ],
+      "capex": [
+        0.2,
+        0.19,
+        0.18,
+        0.17,
+        0.16
+      ],
+      "nwc": [
+        0.11,
+        0.11,
+        0.11,
+        0.11,
+        0.11
+      ],
+      "wacc": 0.12,
+      "g": 0.04,
+      "roic": 0.18,
+      "asset_recovery": 0.5,
+      "investment_recovery": 1.0,
+      "probability": 0.25
+    }
+  },
+  "market": {
+    "price": 242,
+    "shares_m": 40687.434244,
+    "price_date": "2026-10-19",
+    "price_source": "https://stockanalysis.com/quote/idx/DEWA/history/",
+    "shares_source": "https://web.ksei.co.id/services/registered-securities/shares/lc/DEWA?setLocale=en-US",
+    "shares_basis": "Issued-share conservative denominator. Includes treasury shares, not a verified current net outstanding count. KSEI total as of 16 October 2026.",
+    "fx": 18050,
+    "fx_date": "2026-10-19",
+    "fx_source": "https://www.bi.go.id/en/statistik/informasi-kurs/transaksi-bi/jisdor/default.aspx"
+  },
+  "assumptions": {
+    "tax": 0.22,
+    "terminal_year": 5,
+    "base_revenue_basis": "9M2026 annualized x4/3; not FY2026 guidance",
+    "base_nwc_ratio": 0.12,
+    "noncash_lease_capex_ratio": 0.005,
+    "core_source_quality": 0.8,
+    "forecast_visibility": 0.4,
+    "asset_observability": 0.3,
+    "peer_quality": 0.5,
+    "margin_of_safety": 0.2
+  },
+  "limitations": [
+    "Illustrative academic valuation, not an independently verified transaction valuation. Forecasts, WACC and asset recoveries are analyst assumptions.",
+    "Valuation date is 19 October 2026. Balance sheet is 30 September 2026; no stub cash-flow adjustment for the 19-day lag.",
+    "Interims are unaudited. Corrected Q2 is used. Q1 and Q2 comparison periods may not incorporate all later classifications.",
+    "Issued shares include treasury shares. A verified net share count and potential dilution schedule remain outstanding.",
+    "Peer multiples are secondary-vendor Current/TTM snapshots, rounded and not fully harmonized for leases, periods or nonrecurring items. UNTR snapshot is a day later and excluded by default.",
+    "Exploration value is a recovery scenario of carrying value less acquisition deferred tax, not a reserve-based NAV. No production plan, reserve audit or project development capex is available.",
+    "Other borrowings include lease/equipment finance. All are treated as debt-like conservatively. Noncash lease capex is an explicit forecast allowance.",
+    "All non-operating other gains/losses are excluded from recurring EBIT. Some recurring costs could be hidden there. No tax-adjusted normalized net income is asserted.",
+    "Operating NWC uses a simplified ratio. A temporary working-capital release is not capitalized as perpetual growth.",
+    "Monte Carlo percentiles describe assumed inputs, not statistical confidence intervals or measured probabilities of investment success."
+  ],
+  "files": [
+    {
+      "name": "FinancialStatement-2026-I-DEWA.pdf",
+      "sha256": "1153c87d89f9a877cb35ce0fdbfdbfe6d6c4c7a63a8d3dbef1a71ee0fec5bf57"
+    },
+    {
+      "name": "FinancialStatement-2026-II-DEWA.pdf",
+      "sha256": "0edfe7554777e8368dc5b66ec624141ec398ffc15217141726c1ef5862ecf855"
+    },
+    {
+      "name": "FinancialStatement-2026-III-DEWA.pdf",
+      "sha256": "e80d8f84b94eb5dc5c8aeefcc188532f120918bd1dccd9af09c01995dfa6cb8d"
+    },
+    {
+      "name": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
+      "sha256": "bbb40b1ed73aca98102a3a8dd4c4abeb9d136dbf6c1dc87bced8690a4bf1b1f0"
+    }
+  ]
+}
