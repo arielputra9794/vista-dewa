@@ -94,7 +94,11 @@ with tabs[4]:
     st.download_button('Download input register',(st.session_state.get('_unused','') or (json.dumps(data,indent=2))),'VISTA_inputs.json','application/json')
 
 with st.expander("Download project deliverables"):
-    for label,name in [("Excel valuation workbook","VISTA_Valuation.xlsx"),("Methodological report","VISTA_Methodology.pdf"),("Valuation slides (PowerPoint)","VISTA_Pitch.pptx"),("Valuation slides (PDF)","VISTA_Pitch.pdf")]:
-        st.download_button(label,(ROOT/name).read_bytes(),file_name=name)
+    for label,name in [("Excel valuation workbook","VISTA_Valuation.xlsx"),("Methodological report","VISTA_Methodology.pdf"),("Valuation slides (PDF)","VISTA_Pitch.pdf")]:
+        document = ROOT / name
+        if document.is_file():
+            st.download_button(label,document.read_bytes(),file_name=name)
+        else:
+            st.info(f"{label} is not available yet.")
 
 st.caption('VISTA · Developed by Ariel Arviano Putra · 29125401')
