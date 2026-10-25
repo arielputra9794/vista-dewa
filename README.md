@@ -1,19 +1,17 @@
 # VISTA — IDX:DEWA
 
-Developed by **Ariel Arviano Putra · 29125401** for a Business Valuation midterm.
+Ariel Arviano Putra · 29125401
 
-Interactive FCFF DCF, peer valuation, scenarios, sensitivity and transparent suitability scoring. Financial position: 30 September 2026. Market reference: 19 October 2026. Academic analysis with explicit limitations; no live market feed.
+Public app: https://vista-ariel-dewa.streamlit.app
 
-## Deploy on Streamlit Community Cloud
+Financial position: 30 September 2026. Market reference: 19 October 2026. Academic model with explicit assumptions, not a live price feed.
 
-- Repository: this repository
-- Branch: main
-- Main file: app.py
-- Advanced settings: Python 3.12
-- Secrets: none required
+## Files
+Keep app.py, engine.py, requirements.txt, data/, VISTA_Valuation.xlsx, VISTA_Methodology.pdf, VISTA_Pitch.pptx and VISTA_Pitch.pdf at the repository root.
 
-Keep `data/` and the three downloadable deliverables beside app.py. Upload extracted files, not the ZIP itself. Python dependencies are listed in requirements.txt.
+The 19-slide deck is designed to be understood without an oral presentation. Both PowerPoint and PDF contain the public app link. The workbook and methodology report document calculations and limitations.
 
-The application and downloadable documents display the author's name and student number. A public deployment makes those visible to visitors. The original source-report PDFs remain in the separate full submission ZIP; the app includes the page-level register and source URLs.
+## Streamlit deployment
+Main file: app.py. Python 3.12. No secrets required. Upload extracted files, not the ZIP.
 
-App edits are session-specific and do not update the saved workbook/report/deck automatically. The base conclusion is provisional and depends on analyst assumptions. See the methodological PDF for full limitations.
+App changes affect the current session. They do not automatically rewrite the downloadable files.
