@@ -1956,5 +1956,8 @@
       "name": "PT Darma Henwa Tbk dan Entitas Anak 31 Des 2025.pdf",
       "sha256": "bbb40b1ed73aca98102a3a8dd4c4abeb9d136dbf6c1dc87bced8690a4bf1b1f0"
     }
-  ]
+  ],
+  "latest_period": "Q3YTD2026",
+  "latest_period_months": 9,
+  "exploration_tax_period": "FY2025"
 }

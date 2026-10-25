@@ -4,11 +4,25 @@ import json
 import math
 import random
 import statistics
+import calendar
+from datetime import date
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
 def load_data():
     return json.loads((ROOT/'data/model_inputs.json').read_text())
+
+def latest_key(data):
+    return data.get('latest_period', 'Q3YTD2026')
+
+def annualization(data):
+    return 12 / data.get('latest_period_months', 9)
+
+def forecast_end(data, years):
+    anchor = date.fromisoformat(data['financial_date'])
+    year = anchor.year + years
+    day = min(anchor.day, calendar.monthrange(year, anchor.month)[1])
+    return date(year, anchor.month, day).isoformat()
 
 def normalized(h):
     # Start at gross profit, removing non-operating gains without double subtraction.
@@ -16,10 +30,10 @@ def normalized(h):
     return {'ebit':ebit,'ebitda':ebit+h['da_ppe']+h['da_rou'] if 'da_ppe' in h and 'da_rou' in h else None}
 
 def bridge(data,case):
-    h=data['historical']['Q3YTD2026']
+    h=data['historical'][latest_key(data)]
     debt=sum(h[x] for x in ['bank_current','bank_long','finance_lease_current','finance_lease_long','other_borrowings_current','other_borrowings_long','related_debt'])
     investments=(h['investments']+h['associate_asset']+h['liquid_investments'])*case['investment_recovery']
-    exploration=max(0,h['exploration']-data['historical']['FY2025']['exploration_dtl'])*case['asset_recovery']
+    exploration=max(0,h['exploration']-data['historical'][data.get('exploration_tax_period','FY2025')]['exploration_dtl'])*case['asset_recovery']
     return dict(debt=debt,cash=h['cash'],net_debt=debt-h['cash'],investments=investments,exploration=exploration,nci=h['nci'],adjustment=h['cash']+investments+exploration-debt-h['nci'])
 
 def base_nwc(h):
@@ -41,8 +55,8 @@ def dcf(data,case):
     if data['market']['shares_m']<=0 or data['market']['price']<=0:raise ValueError('Price and shares must be positive.')
     tax=data['assumptions']['tax']
     if not 0<=tax<=1:raise ValueError('Tax must lie between 0 and 100%.')
-    rev=data['historical']['Q3YTD2026']['revenue']*4/3
-    nwc=base_nwc(data['historical']['Q3YTD2026'])
+    rev=data['historical'][latest_key(data)]['revenue']*annualization(data)
+    nwc=base_nwc(data['historical'][latest_key(data)])
     rows=[]
     for i in range(5):
         rev*=1+case['growth'][i]
@@ -55,7 +69,7 @@ def dcf(data,case):
         change=closing_nwc-nwc
         fcff=nopat+da-cash_capex-lease_capex-change
         factor=(1+case['wacc'])**(i+1)
-        rows.append(dict(period=f'F{i+1}',year_end=f'{2027+i}-09-30',revenue=rev,ebit=ebit,nopat=nopat,da=da,cash_capex=cash_capex,lease_capex=lease_capex,nwc=closing_nwc,delta_nwc=change,fcff=fcff,discount_factor=1/factor,pv=fcff/factor))
+        rows.append(dict(period=f'F{i+1}',year_end=forecast_end(data,i+1),revenue=rev,ebit=ebit,nopat=nopat,da=da,cash_capex=cash_capex,lease_capex=lease_capex,nwc=closing_nwc,delta_nwc=change,fcff=fcff,discount_factor=1/factor,pv=fcff/factor))
         nwc=closing_nwc
     terminal_nopat=rows[-1]['nopat']*(1+case['g'])
     reinvestment=terminal_nopat*case['g']/case['roic']
@@ -73,7 +87,7 @@ def relative(data,case):
     if not vals:return dict(price=None,ev=None,multiple=None,n=0,dispersion=None)
     multiple=statistics.median(vals)
     # Normalized annualized 9M operating EBITDA, not acquisition-inflated earnings.
-    ebitda=normalized(data['historical']['Q3YTD2026'])['ebitda']*4/3
+    ebitda=normalized(data['historical'][latest_key(data)])['ebitda']*annualization(data)
     if ebitda<=0: return dict(price=None,ev=None,multiple=multiple,n=len(vals),dispersion=None)
     ev=multiple*ebitda
     eq=ev+bridge(data,case)['adjustment']

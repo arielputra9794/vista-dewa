@@ -1,8 +1,10 @@
 """Launch with python -m streamlit run app.py."""
-import copy,json
+import copy,json,hashlib
+from datetime import datetime, timezone
 import pandas as pd
 import streamlit as st
-from engine import ROOT,load_data,evaluate,all_results,normalized,sensitivity,monte_carlo,audit
+from engine import ROOT,load_data,evaluate,all_results,normalized,sensitivity,monte_carlo,audit,latest_key,annualization
+from model_io import parse_model
 
 
 LABELS = {
@@ -38,13 +40,33 @@ def show_table(df, **kwargs):
 
 st.set_page_config(page_title='VISTA · DEWA',page_icon='◈',layout='wide')
 st.markdown('<style>.block-container{padding-top:2rem} h1{letter-spacing:-.04em} [data-testid="stMetricValue"]{color:#06796e}</style>',unsafe_allow_html=True)
-data=load_data()
+saved_data=load_data()
+with st.expander('Update financial and market data'):
+    st.write('Download the JSON template, edit its inputs and sources, then import it here. All calculations reuse the same engine. Changes stay in this browser session until exported.')
+    st.caption('Calendar-year cumulative statements only. For a later period, add a complete historical snapshot, set latest_period, latest_period_months and financial_date, update opening cash and source records, and retain the earlier periods. Model money is IDR billion; shares are millions.')
+    st.download_button('Download model update template',json.dumps(st.session_state.get('imported_model',saved_data),indent=2),'VISTA_model_template.json','application/json')
+    uploaded=st.file_uploader('Import updated model JSON',type=['json'])
+    if st.button('Validate and apply import',disabled=uploaded is None):
+        try:
+            candidate=parse_model(uploaded.getvalue())
+            st.session_state['imported_model']=candidate
+            st.session_state['model_imported_at']=datetime.now(timezone.utc).isoformat(timespec='seconds')
+            st.session_state['model_revision']=hashlib.sha256(uploaded.getvalue()).hexdigest()[:12]
+            st.success('Import accepted: structure, units, financial reconciliations and scenario checks passed.')
+        except (ValueError,UnicodeError) as error:
+            st.error('Import rejected. Current data remain unchanged. '+str(error))
+    if st.button('Restore submitted data'):
+        for key in ['imported_model','model_imported_at','model_revision']:
+            st.session_state.pop(key,None)
+        st.rerun()
+data=copy.deepcopy(st.session_state.get('imported_model',saved_data))
+st.caption(f"Data prepared: {data['prepared']} · Last import (UTC): {st.session_state.get('model_imported_at','none; submitted dataset')}")
 st.title('VISTA')
 st.caption('Valuation Intelligence, Scenario Testing & Approach Selection')
 st.caption('Developed by Ariel Arviano Putra · 29125401')
 st.subheader('PT Darma Henwa Tbk · IDX:DEWA')
 st.caption('Number format: 1,234.56 — comma separates thousands; dot marks decimals. Editable inputs may follow browser locale.')
-st.caption('19 October 2026 market reference · 30 September 2026 financial position · IDR billion unless labeled otherwise')
+st.caption(f"Market reference: {data['valuation_date']} · Financial position: {data['financial_date']} · IDR billion unless labeled otherwise")
 with st.sidebar:
     st.header('Valuation controls')
     case_name=st.selectbox('Scenario',list(data['scenarios']),index=1)
@@ -58,14 +80,14 @@ with st.sidebar:
     case['roic']=st.slider('Terminal ROIC (%)',6.,30.,case['roic']*100,.5)/100
     case['asset_recovery']=st.slider('Exploration net carrying value recovery (%)',0,100,round(case['asset_recovery']*100))/100
     case['investment_recovery']=st.slider('Investment recovery (%)',0,100,round(case['investment_recovery']*100))/100
-    data['assumptions']['tax']=st.slider('Normalized tax (%)',0.,40.,22.,.5)/100
-    data['assumptions']['forecast_visibility']=st.slider('Forecast visibility judgment',0.,1.,.4,.05)
-    data['assumptions']['peer_quality']=st.slider('Peer data quality judgment',0.,1.,.5,.05)
+    data['assumptions']['tax']=st.slider('Normalized tax (%)',0.,40.,data['assumptions']['tax']*100,.5)/100
+    data['assumptions']['forecast_visibility']=st.slider('Forecast visibility judgment',0.,1.,float(data['assumptions']['forecast_visibility']),.05)
+    data['assumptions']['peer_quality']=st.slider('Peer data quality judgment',0.,1.,float(data['assumptions']['peer_quality']),.05)
     st.caption('Quality scores are disclosed analyst judgments, not trained predictions.')
 
 with st.expander('Edit five-year operating assumptions'):
     rows=[{'Period':f'F{i+1}',**{k:case[k][i]*100 for k in ['growth','margin','da','capex','nwc']}} for i in range(5)]
-    edited=st.data_editor(pd.DataFrame(rows),disabled=['Period'],hide_index=True,key=case_name, column_config={k:st.column_config.NumberColumn(label,format='%.2f') for k,label in {'growth':'Revenue Growth (%)','margin':'EBIT Margin (%)','da':'D&A / Revenue (%)','capex':'Cash CapEx / Revenue (%)','nwc':'NWC / Revenue (%)'}.items()})
+    edited=st.data_editor(pd.DataFrame(rows),disabled=['Period'],hide_index=True,key=case_name+'_'+st.session_state.get('model_revision','submitted'), column_config={k:st.column_config.NumberColumn(label,format='%.2f') for k,label in {'growth':'Revenue Growth (%)','margin':'EBIT Margin (%)','da':'D&A / Revenue (%)','capex':'Cash CapEx / Revenue (%)','nwc':'NWC / Revenue (%)'}.items()})
     st.caption('All entries are percentages. Margin is normalized EBIT after final tax. Cash capex excludes the additional 0.5% lease/noncash replacement allowance.')
     for k in ['growth','margin','da','capex','nwc']:case[k]=(edited[k]/100).tolist()
 with st.expander('Peer selection and multiple overrides'):
@@ -78,6 +100,16 @@ st.warning(a['recommendation']+' · Assumption-dependent academic conclusion. Re
 cols=st.columns(4)
 for col,label,value in zip(cols,['Blended value / share','DCF value / share','Relative value / share','Model confidence'],[f"Rp{a['fair_price']:,.1f}",f"Rp{d['price']:,.1f}",'Unavailable' if r['price'] is None else f"Rp{r['price']:,.1f}",f"{a['confidence']:.0f}/100"]):col.metric(label,value)
 st.caption(f"Implied return {a['upside']:+.1%}. This is a valuation gap, not a forecast realized return. DCF weight {a['dcf_weight']:.1%}, relative weight {a['relative_weight']:.1%}.")
+h=data['historical'][latest_key(data)]
+market_cap=data['market']['price']*data['market']['shares_m']/1000
+market_ev=market_cap+d['bridge']['net_debt']+d['bridge']['nci']
+run_ebitda=normalized(h)['ebitda']*annualization(data)
+with st.expander('Observed market valuation'):
+    st.metric('Market Capitalization (IDR bn)',f'{market_cap:,.1f}')
+    st.metric('Observed Enterprise Value (IDR bn)',f'{market_ev:,.1f}')
+    st.metric('Observed EV / EBITDA','N/M' if run_ebitda<=0 else f'{market_ev/run_ebitda:.2f}×')
+    st.metric('Price / Book','N/M' if h['parent_equity']<=0 else f"{market_cap/h['parent_equity']:.2f}×")
+    st.caption('EV adds debt and NCI and subtracts cash. EBITDA annualizes the selected cumulative period. P/B uses parent equity. These observed ratios use no nonoperating-asset deduction and are benchmarks, not independent fair values.')
 tabs=st.tabs(['Valuation','Financial history','Scenarios & sensitivity','Suitability & confidence','Sources & checks'])
 with tabs[0]:
     st.subheader('Recurring cash flows')
@@ -91,14 +123,16 @@ with tabs[0]:
     st.write('Terminal FCFF = next-year NOPAT × (1 − g / terminal ROIC). This funds perpetual growth rather than assuming growth without reinvestment.')
 with tabs[1]:
     hist=[]
-    for name in ['FY2024R','FY2025','Q1YTD2026','Q2YTD2026','Q3YTD2026']:
+    for name in data['historical']:
+        if not all(k in data['historical'][name] for k in ['revenue','net_income','cogs','sga','final_tax']):continue
         h=data['historical'][name];hist.append({'Period':name,'Revenue':h['revenue'],'Reported profit':h['net_income'],**normalized(h)})
     show_table(pd.DataFrame(hist),hide_index=True)
-    st.caption('Interims are cumulative. FY2024R is the restated comparative. Standalone Q2 = six months minus Q1; standalone Q3 = nine months minus six months.')
+    st.caption('Submitted 2026 history: interims are cumulative. FY2024R is the restated comparative. Standalone Q2 = six months minus Q1; standalone Q3 = nine months minus six months.')
     q=[];prev={'revenue':0,'net_income':0}
     for n in ['Q1YTD2026','Q2YTD2026','Q3YTD2026']:
         h=data['historical'][n];q.append({'Quarter':n[:2],'Revenue':h['revenue']-prev['revenue'],'Reported profit':h['net_income']-prev['net_income']});prev=h
     show_table(pd.DataFrame(q),hide_index=True)
+    st.caption('The following narrative describes the submitted filings; review it when importing revisions.')
     st.info('FY2025 acquisition gain: Rp4,535.4bn. Normalization starts from gross profit less SG&A and final tax, so the gain is not subtracted twice. All other gains/losses are disclosed separately in the input register.')
     st.write('2024 restatement: assets/equity reduced by Rp272.1bn; net income increased by Rp38.9bn. 2026 interims reclassify Rp2,110.0bn within opening 2025 equity, with no total equity effect. The corrected Q2 file supersedes the earlier version.')
 with tabs[2]:
@@ -108,9 +142,17 @@ with tabs[2]:
     expected=sum(x['assessment']['fair_price']*data['scenarios'][x['case']]['probability'] for x in rr)
     st.write(f'Probability-weighted scenario value: Rp{expected:,.1f}/share. Probabilities are analyst assumptions.')
     st.subheader('DCF sensitivity to WACC and terminal growth')
-    st.dataframe(pd.DataFrame(sensitivity(data,case)).set_index('WACC').style.format('{:,.1f}'))
+    sensitivity_frame=pd.DataFrame(sensitivity(data,case)).set_index('WACC')
+    sensitivity_frame.index=[f'{v:.0%}' for v in sensitivity_frame.index]
+    sensitivity_frame.index.name='WACC'
+    st.dataframe(sensitivity_frame.style.format('{:,.1f}'))
     st.download_button('Download active forecast CSV',frame.to_csv(),'VISTA_active_forecast.csv','text/csv')
-    st.download_button('Download active valuation JSON',json.dumps(result,indent=2),'VISTA_active_result.json','application/json')
+    active_export={'exported_at_utc':datetime.now(timezone.utc).isoformat(timespec='seconds'),'valuation_date':data['valuation_date'],'financial_date':data['financial_date'],'result':result}
+    st.download_button('Download active valuation JSON',json.dumps(active_export,indent=2),'VISTA_active_result.json','application/json')
+    export_inputs=copy.deepcopy(data)
+    export_inputs['scenarios'][case_name]=copy.deepcopy(case)
+    st.download_button('Save active model inputs',json.dumps(export_inputs,indent=2),'VISTA_active_inputs.json','application/json')
+    st.caption('Saved inputs include the active edited scenario, market and peer controls. Re-import this file to resume. Fixed report, slide PDF and workbook downloads retain the submitted case.')
 with tabs[3]:
     show_table(pd.DataFrame([{'Approach':'DCF','Score':a['dcf_score'],'Weight':a['dcf_weight']},{'Approach':'EV/EBITDA','Score':a['relative_score'],'Weight':a['relative_weight']},{'Approach':'Asset approach','Score':a['asset_score'],'Weight':0}]),hide_index=True)
     st.write('DCF score = 40% source quality + 30% forecast visibility + 30% explicit-period value share (floored at zero). Relative score = 40% peer quality + 30% peer coverage + 30% inverse dispersion. Asset score = 50% source quality + 50% asset observability. Asset method has zero blend weight because no independent reserve NAV is available. Market price is a benchmark, never a valuation weight.')
@@ -128,7 +170,7 @@ with tabs[4]:
     st.download_button('Download input register',(st.session_state.get('_unused','') or (json.dumps(data,indent=2))),'VISTA_inputs.json','application/json')
 
 with st.expander("Download project deliverables"):
-    for label,name in [("Excel valuation workbook","VISTA_Valuation.xlsx"),("Methodological report","VISTA_Methodology.pdf"),("Valuation slides (PDF)","VISTA_Pitch.pdf")]:
+    for label,name in [("Excel valuation workbook","VISTA_Valuation.xlsx"),("Methodological report","VISTA_Methodology.pdf"),("Valuation slides (PDF)","VISTA_Pitch.pdf"),("User guide","VISTA_User_Guide.pdf")]:
         document = ROOT / name
         if document.is_file():
             st.download_button(label,document.read_bytes(),file_name=name)
