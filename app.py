@@ -27,6 +27,8 @@ def display_label(key):
 
 def show_table(df, **kwargs):
     display = df.rename(columns={c:display_label(c) for c in df.columns})
+    if display.index.name is not None:
+        display = display.rename_axis(display_label(display.index.name))
     formats = {}
     for col in display.select_dtypes(include='number').columns:
         formats[col] = '{:,.2f}'
